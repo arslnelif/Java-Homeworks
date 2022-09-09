@@ -1,1 +1,0 @@
-# Not-Ortalamas-Hesaplay-c-
