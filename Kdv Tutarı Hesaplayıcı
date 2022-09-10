@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+      double tutar , kdvTutar  , kdvliTutar , kdvOranı  ;
+     boolean kdvDurum ;
+
+
+
+      Scanner input = new Scanner(System.in) ;
+
+      System.out.print("Ücret Tutarını Giriniz :");
+      tutar = input.nextDouble();
+
+      kdvDurum = (0 < tutar) && (tutar < 1000);
+      kdvOranı = kdvDurum ? 0.18 : 0.8;
+
+      kdvTutar = tutar * kdvOranı;
+
+      kdvliTutar = tutar + kdvTutar;
+
+
+
+        System.out.println("Kdv'siz Tutar :" + tutar);
+        System.out.println("Kdv Oranı :" + kdvOranı);
+        System.out.println("Kdv Tutar :" + kdvTutar);
+        System.out.println("Kdv'li Tutar :" + kdvliTutar);
+
+
+
+
+
+
+    }
+
+}
