@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        double kg,boy,vke ;
+
+        Scanner inp = new Scanner(System.in);
+
+        System.out.print("Boyunuzu Giriniz (Cm) :");
+
+        boy=inp.nextDouble();
+
+        System.out.print("Kilonuzu Giriniz (Kg) :");
+
+        kg=inp.nextDouble();
+
+        vke=kg/Math.pow(boy,2);
+
+        System.out.println("Beden Kitle Endeksiniz : " +vke);
+
+
+    }
+
+
+}
+
+
