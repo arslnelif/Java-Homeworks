@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        double km,perkm,total,startprice = 10 ;
+        perkm=2.20;
+
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("Mesafeyi KM Cinsinden Giriniz: ");
+        km = input.nextDouble();
+
+        total = (km*perkm);
+        total +=startprice;
+
+        total= (total<20) ? 20 : total ;
+
+        System.out.println("Toplam Tutar :" +total);
+
+
+
+    }
+
+
+}
