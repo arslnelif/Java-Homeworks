@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int math,phy,tr,chm,mus;
+
+        System.out.print(" Matematik Notunu Giriniz: ");
+        math = input.nextInt();
+        if(math<=0 || math>=100){
+            System.out.println("Geçersiz Not Tekrar Deneyin.");
+            return;
+        }
+        System.out.print(" Fizik Notunu Giriniz: ");
+        phy = input.nextInt();
+        if(phy<=0 || phy>=100){
+            System.out.println("Geçersiz Not Tekrar deneyin.");
+            return;
+        }
+        System.out.print(" Türkçe Notunu Giriniz: ");
+        tr = input.nextInt();
+        if(tr<=0 || tr>=100){
+            System.out.println("Geçersiz Not Tekrar deneyin.");
+            return;
+        }
+        System.out.print(" Kimya Notunu Giriniz: ");
+        chm = input.nextInt();
+        if(chm<=0 || chm>=100){
+            System.out.println("Geçersiz Not Tekrar deneyin.");
+            return;
+        }
+        System.out.print(" Müzik Notunu Giriniz:");
+        mus = input.nextInt();
+        if(mus<=0 || mus>=100){
+            System.out.println("Geçersiz Not Tekrar deneyin.");
+            return;
+        }
+        double avarage = (math+phy+tr+chm+mus)/5;
+        if(avarage>54){
+            System.out.println("SINIFI GEÇTİ");
+        }
+        else if(avarage <0 && avarage >100){
+            System.out.println("GEÇERSİZ NOT");
+        }
+        else{
+            System.out.println("SINIF TEKRARI");
+        }
+    }
+}
