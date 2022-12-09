@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        String userName , password , answer , newPassword;
+
+        Scanner i = new Scanner(System.in);
+
+        System.out.print("Enter Username : ");
+
+        userName = i.nextLine();
+
+        System.out.print("Enter Password : ");
+
+        password = i.nextLine();
+
+        if((userName.equals("patika")) && (password.equals("1234")) ) {
+
+            System.out.println("Login Successs");
+
+        }
+        else{
+            System.out.print("Wrong username or password  forgot your password (Yes/No) : ");
+
+            answer = i.nextLine();
+
+            if (answer.equals("Yes")){
+
+                System.out.print("Enter a new password : ");
+
+                newPassword = i.nextLine();
+
+                i.close();
+
+                if (!newPassword.equals("1234")){
+
+                    System.out.println("Password Changed ");
+
+                } else{
+                    System.out.println("Your new password must be different from current password.");
+                }
+
+
+
+
+            }
+
+        }
+
+    }
+
+}
+
