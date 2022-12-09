@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+
+public class Calculator {
+
+
+        public static void main(String[] args) {
+
+
+
+            int n1 , n2 , calc;
+
+            Scanner i = new Scanner(System.in);
+
+            System.out.print("İlk Sayıyı Giriniz : ");
+
+            n1 = i.nextInt();
+
+            System.out.print("İkinci Sayıyı Giriniz : ");
+
+            n2 = i.nextInt();
+
+            System.out.println("Lütfen yapmak isteğiniz işlemi seçiniz\n 1-Toplama\n 2-Çıkarma\n 3-Çarpma\n 4-Bölme");
+
+            calc = i.nextInt();
+
+            i.close();
+
+            switch (calc) {
+                case 1:
+                    System.out.println("Toplama : "+ (n1 + n2));
+                    break;
+                case 2:
+                    System.out.println("Cikarma : "+ (n1 - n2));
+                    break;
+                case 3:
+                    System.out.println("Carpma : "+(n1 * n2));
+                    break;
+                case 4:
+                    if(n2 != 0){
+                        System.out.println("Bolme : "+ (n1 / n2));
+                    }
+                    else{
+                        System.out.print("Bir sayı 0'a bölünemez!!");
+                    }
+                    break;
+                default:
+                    System.out.println("Yanlış seçim yaptınız. Tekrar Deneyin!!!");
+
+
+            }
+
+
+        }
+    }
+
